@@ -34,9 +34,14 @@ export default function TopNavBar() {
           >
             Initiatives
           </a>
-          <button className="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:scale-105 transition-transform">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:scale-105 transition-transform inline-flex items-center justify-center"
+          >
             Join MYBF
-          </button>
+          </a>
         </div>
         <button className="md:hidden text-on-surface">
           <span className="material-symbols-outlined">menu</span>

@@ -45,9 +45,14 @@ export default function Home() {
             MYBF is a thriving entrepreneurial community that empowers ambitious individuals to connect, collaborate, and build successful businesses. By bringing together entrepreneurs, founders, professionals, and innovators, we create an ecosystem where ideas are transformed into opportunities and businesses achieve sustainable growth.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(140,217,117,0.4)] transition-all">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(140,217,117,0.4)] transition-all inline-flex items-center justify-center"
+            >
               JOIN THE COMMUNITY
-            </button>
+            </a>
             <button className="border border-white/20 text-on-surface px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-white/5 transition-all">
               EXPLORE MYBF
             </button>
@@ -626,9 +631,14 @@ export default function Home() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <button className="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps uppercase tracking-widest hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all whitespace-nowrap">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps uppercase tracking-widest hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all whitespace-nowrap inline-flex items-center justify-center"
+              >
                 Apply for Membership
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -645,9 +655,14 @@ export default function Home() {
                 Whether you&apos;re building your first business, growing an existing venture, exploring a new idea, or looking to connect with like-minded entrepreneurs, MYBF provides the community, knowledge, and opportunities to help you move forward. Together, let&apos;s shape the future of entrepreneurship in Malappuram.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <button className="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-sm uppercase tracking-[0.2em] hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-sm uppercase tracking-[0.2em] hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all inline-flex items-center justify-center"
+                >
                   Join MYBF
-                </button>
+                </a>
                 <button className="bg-transparent border border-white/20 text-on-surface px-12 py-5 rounded-full font-label-caps text-sm uppercase tracking-[0.2em] hover:bg-white/5 transition-all">
                   Contact Us
                 </button>
