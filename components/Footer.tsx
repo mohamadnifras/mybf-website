@@ -97,7 +97,7 @@ export default function Footer() {
       </div>
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-white/5 text-center md:text-left">
         <p className="text-on-surface-variant text-sm font-body-md text-body-md">
-          © 2024 Malappuram Youth Business Forum. All rights reserved.
+          © 2026 Malappuram Youth Business Forum. All rights reserved.
         </p>
       </div>
     </footer>
