@@ -42,7 +42,7 @@ export default function Home() {
             Empowering the Next Generation of <span className="text-primary">Entrepreneurs</span> in Malappuram
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
-            A supporting, inspiring, and equipping community building future leaders through collaborative growth and global networking.
+            MYBF is a thriving entrepreneurial community that empowers ambitious individuals to connect, collaborate, and build successful businesses. By bringing together entrepreneurs, founders, professionals, and innovators, we create an ecosystem where ideas are transformed into opportunities and businesses achieve sustainable growth.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button className="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(140,217,117,0.4)] transition-all">
@@ -53,7 +53,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 animate-bounce">
           <span className="material-symbols-outlined text-primary">expand_more</span>
         </div>
       </header>
@@ -66,11 +66,14 @@ export default function Home() {
               <span className="font-label-caps text-[10px] text-primary uppercase tracking-[0.2em]">Our Essence</span>
             </div>
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Who We Are</h2>
-            <p className="text-on-surface-variant mb-6 leading-relaxed">
-              Malappuram Youth Business Forum (MYBF) is a premier collective of dynamic young entrepreneurs, visionaries, and business leaders dedicated to transforming the economic landscape of Malappuram.
+            <p className="text-on-surface-variant mb-4 leading-relaxed">
+              <strong>Creating a Stronger Entrepreneurial Ecosystem for Malappuram.</strong> Malappuram Youth Business Forum (MYBF) is a collaborative community that unites aspiring entrepreneurs, startup founders, business owners, professionals, mentors, and innovators across Malappuram.
+            </p>
+            <p className="text-on-surface-variant mb-4 leading-relaxed">
+              Our mission is to foster meaningful relationships, encourage knowledge sharing, and create opportunities that inspire entrepreneurial success. Supported by Mission Malappuram 2050, MYBF is committed to strengthening the district&apos;s entrepreneurial ecosystem by connecting people with ideas, mentors, industry experts, and business opportunities.
             </p>
             <p className="text-on-surface-variant mb-8 leading-relaxed">
-              We bridge the gap between local talent and global opportunities, providing a platform where innovation meets execution. Our community is built on the pillars of mutual support, knowledge sharing, and ethical business practices.
+              Through networking, mentorship, business consultation, learning programs, and strategic collaborations, we help entrepreneurs overcome challenges, accelerate growth, and create lasting economic and social impact.
             </p>
             <div className="grid grid-cols-2 gap-8 border-t border-white/5 pt-8">
               <div>
