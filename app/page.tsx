@@ -36,7 +36,7 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden">
         <ShaderCanvas />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-background/40 to-background"></div>
         <div className="relative z-10 text-center px-margin-mobile max-w-5xl fade-in-up group">
           {/* Subtle animated glow behind the text */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/10 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
@@ -47,7 +47,7 @@ export default function Home() {
               of{" "}
               <span className="relative inline-block">
                 <span className="absolute -inset-2 bg-primary/30 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></span>
-                <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#a7f68e] drop-shadow-[0_0_15px_rgba(140,217,117,0.2)] group-hover:drop-shadow-[0_0_25px_rgba(140,217,117,0.6)] transition-all duration-700">
+                <span className="relative text-transparent bg-clip-text bg-linear-to-r from-primary to-primary-fixed drop-shadow-[0_0_15px_rgba(140,217,117,0.2)] group-hover:drop-shadow-[0_0_25px_rgba(140,217,117,0.6)] transition-all duration-700">
                   Entrepreneurs
                 </span>
               </span>{" "}
@@ -122,7 +122,7 @@ export default function Home() {
           {/* Founder */}
           <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
             <div
-              className="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
               style={{ backgroundImage: 'url("/founder.jpg")' }}
             ></div>
             <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Dr. Sahid Cholayil</h3>
@@ -136,7 +136,7 @@ export default function Home() {
           {/* Co-Founder 1 */}
           <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
             <div
-              className="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
               style={{ backgroundImage: 'url("/co-founder-1.jpg")' }}
             ></div>
             <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Shibili Rahman K.P.</h3>
@@ -150,7 +150,7 @@ export default function Home() {
           {/* Co-Founder 2 */}
           <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
             <div
-              className="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
               style={{ backgroundImage: 'url("/co-founder-2.jpg")' }}
             ></div>
             <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Muhammed Nabeel P.A.</h3>
@@ -307,8 +307,8 @@ export default function Home() {
 
       {/* Initiatives */}
       <section className="py-24 md:py-40 relative overflow-hidden" id="initiatives">
-        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-1/4 left-0 w-125 h-125 bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-1/4 right-0 w-125 h-125 bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
         
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-20 relative z-10 reveal-on-scroll active fade-in-up">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">MYBF Initiatives</h2>
@@ -320,7 +320,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">campaign</span>
               </div>
               <div>
@@ -334,7 +334,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">workspace_premium</span>
               </div>
               <div>
@@ -348,7 +348,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">explore</span>
               </div>
               <div>
@@ -362,7 +362,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">volunteer_activism</span>
               </div>
               <div>
@@ -376,7 +376,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">groups</span>
               </div>
               <div>
@@ -390,7 +390,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">mic</span>
               </div>
               <div>
@@ -404,7 +404,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">co_present</span>
               </div>
               <div>
@@ -418,7 +418,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">handshake</span>
               </div>
               <div>
@@ -432,7 +432,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">emoji_events</span>
               </div>
               <div>
@@ -446,7 +446,7 @@ export default function Home() {
           <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             <div className="flex items-start gap-6 relative z-10">
-              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">newspaper</span>
               </div>
               <div>
@@ -460,7 +460,7 @@ export default function Home() {
 
       {/* Who Can Join */}
       <section className="py-24 relative overflow-hidden" id="who-can-join">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6 reveal-on-scroll active fade-in-up">Who Can Join?</h2>
           <p className="text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg reveal-on-scroll active fade-in-up">
@@ -512,63 +512,63 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Benefit 1 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">hub</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Exclusive Business Network</h3>
           </div>
           {/* Benefit 2 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">groups</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Founder Meetups</h3>
           </div>
           {/* Benefit 3 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">share</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Business Referrals</h3>
           </div>
           {/* Benefit 4 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">psychology</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Mentorship Access</h3>
           </div>
           {/* Benefit 5 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">forum</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Business Consultation</h3>
           </div>
           {/* Benefit 6 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">school</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Learning Programs</h3>
           </div>
           {/* Benefit 7 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">handshake</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Investor Connections</h3>
           </div>
           {/* Benefit 8 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">group_work</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Collaboration Opportunities</h3>
           </div>
           {/* Benefit 9 */}
           <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-primary">workspace_premium</span>
             </div>
             <h3 className="font-headline-sm text-base text-on-surface">Member Recognition</h3>
@@ -594,7 +594,7 @@ export default function Home() {
                 "Grow your business while contributing to Malappuram's entrepreneurial ecosystem."
               ].map((item, index) => (
                 <div key={index} className="flex gap-4 items-start">
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 rounded-full bg-primary/20 shrink-0 flex items-center justify-center mt-1">
                     <span className="material-symbols-outlined text-primary text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>check</span>
                   </div>
                   <p className="text-on-surface-variant">{item}</p>
@@ -604,12 +604,12 @@ export default function Home() {
           </div>
           <div className="reveal-on-scroll active fade-in-up hidden lg:block">
             <div className="glass p-2 rounded-[2.5rem]">
-              <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative">
+              <div className="aspect-4/5 rounded-4xl overflow-hidden relative">
                 <div
                   className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
                   style={{ backgroundImage: "url('/abstract-render.png')" }}
                 ></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-transparent"></div>
               </div>
             </div>
           </div>
@@ -629,7 +629,7 @@ export default function Home() {
                 MYBF is more than a network—it&apos;s a community of entrepreneurs committed to supporting one another, sharing opportunities, and building a stronger future for business in Malappuram.
               </p>
             </div>
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
                 target="_blank" 
@@ -647,7 +647,7 @@ export default function Home() {
       <section className="py-24 md:py-40">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="glass bg-surface-container-low/50 border-white/5 p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden reveal-on-scroll active fade-in-up">
-            <div className="absolute -top-1/2 -left-1/4 w-[100%] h-[150%] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+            <div className="absolute -top-1/2 -left-1/4 w-full h-[150%] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
             <div className="relative z-10">
               <h2 className="font-display-xl text-headline-lg-mobile md:text-display-sm text-on-surface mb-8">Start Your Entrepreneurial Journey with MYBF</h2>
               <p className="font-body-lg text-on-surface-variant mb-12 max-w-3xl mx-auto leading-relaxed">
