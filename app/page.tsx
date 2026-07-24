@@ -612,33 +612,58 @@ export default function Home() {
         </div>
       </section>
 
+      {/* For Members */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="bg-primary/10 border border-primary/20 rounded-[2.5rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 reveal-on-scroll active fade-in-up">
+            <div className="max-w-2xl text-center md:text-left">
+              <div className="inline-block px-4 py-2 bg-primary/20 rounded-full mb-6">
+                <span className="font-label-caps text-xs text-primary uppercase tracking-widest">For Members</span>
+              </div>
+              <h2 className="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-4">Become Part of the Movement</h2>
+              <p className="text-on-surface-variant text-lg leading-relaxed">
+                MYBF is more than a network—it&apos;s a community of entrepreneurs committed to supporting one another, sharing opportunities, and building a stronger future for business in Malappuram.
+              </p>
+            </div>
+            <div className="flex-shrink-0">
+              <button className="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps uppercase tracking-widest hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all whitespace-nowrap">
+                Apply for Membership
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-24 md:py-40">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="glass bg-primary/5 border-primary/20 p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden">
-            <div className="absolute -top-1/2 -left-1/4 w-[100%] h-[150%] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+          <div className="glass bg-surface-container-low/50 border-white/5 p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden reveal-on-scroll active fade-in-up">
+            <div className="absolute -top-1/2 -left-1/4 w-[100%] h-[150%] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
             <div className="relative z-10">
-              <h2 className="font-display-xl text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Ready to Build the Future?</h2>
-              <p className="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
-                Take the first step towards transforming your business vision into a legacy. Join the most influential business community in Malappuram today.
+              <h2 className="font-display-xl text-headline-lg-mobile md:text-display-sm text-on-surface mb-8">Start Your Entrepreneurial Journey with MYBF</h2>
+              <p className="font-body-lg text-on-surface-variant mb-12 max-w-3xl mx-auto leading-relaxed">
+                Whether you&apos;re building your first business, growing an existing venture, exploring a new idea, or looking to connect with like-minded entrepreneurs, MYBF provides the community, knowledge, and opportunities to help you move forward. Together, let&apos;s shape the future of entrepreneurship in Malappuram.
               </p>
-              <div className="flex flex-col md:flex-row gap-6 justify-center">
-                <button className="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-label-caps uppercase tracking-[0.2em] hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all">
-                  Apply for Membership
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <button className="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-sm uppercase tracking-[0.2em] hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all">
+                  Join MYBF
+                </button>
+                <button className="bg-transparent border border-white/20 text-on-surface px-12 py-5 rounded-full font-label-caps text-sm uppercase tracking-[0.2em] hover:bg-white/5 transition-all">
+                  Contact Us
                 </button>
               </div>
-              <div className="mt-16 pt-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-10">
+              <div className="mt-20 pt-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div>
-                  <div className="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Email Us</div>
-                  <div className="text-on-surface">hello@mybf.com</div>
+                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Email</div>
+                  <div className="text-on-surface text-lg">mybfcommunity@gmail.com</div>
                 </div>
                 <div>
-                  <div className="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Call Us</div>
-                  <div className="text-on-surface">+91 98765 43210</div>
+                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Instagram & Facebook</div>
+                  <div className="text-on-surface text-lg">@mybf.community</div>
                 </div>
                 <div>
-                  <div className="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Visit Us</div>
-                  <div className="text-on-surface">MYBF Hub, Malappuram</div>
+                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Phone</div>
+                  <div className="text-on-surface text-lg">+91 85929 56370</div>
                 </div>
               </div>
             </div>
