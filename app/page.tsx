@@ -113,7 +113,7 @@ export default function Home() {
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4">
               <div
                 className="w-full h-full rounded-2xl bg-cover bg-center"
-                style={{ backgroundImage: "url('/who-we-are-bg.jpg')" }}
+                style={{ backgroundImage: "url('/who-we-are-bg.png')" }}
               ></div>
             </div>
             <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl hidden md:block">
