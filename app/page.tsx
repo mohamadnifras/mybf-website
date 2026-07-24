@@ -98,16 +98,7 @@ export default function Home() {
             <p className="text-on-surface-variant mb-8 leading-relaxed">
               Through networking, mentorship, business consultation, learning programs, and strategic collaborations, we help entrepreneurs overcome challenges, accelerate growth, and create lasting economic and social impact.
             </p>
-            <div className="grid grid-cols-2 gap-8 border-t border-white/5 pt-8">
-              <div>
-                <div className="text-primary font-display-xl text-headline-md mb-2">500+</div>
-                <div className="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Active Members</div>
-              </div>
-              <div>
-                <div className="text-primary font-display-xl text-headline-md mb-2">120+</div>
-                <div className="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Business Verticals</div>
-              </div>
-            </div>
+            
           </div>
           <div className="relative reveal-on-scroll active fade-in-up" style={{ transform: "translateY(40px)" }}>
             <div className="aspect-square rounded-3xl overflow-hidden glass p-4">
@@ -116,17 +107,7 @@ export default function Home() {
                 style={{ backgroundImage: "url('/who-we-are-bg.png')" }}
               ></div>
             </div>
-            <div className="absolute -bottom-6 -right-6 glass p-6 rounded-2xl hidden md:block">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                  <span className="material-symbols-outlined text-on-primary">groups</span>
-                </div>
-                <div>
-                  <div className="font-bold">Founded in 2024</div>
-                  <div className="text-sm text-on-surface-variant">Malappuram, KL</div>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
