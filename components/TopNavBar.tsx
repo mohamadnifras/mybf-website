@@ -5,7 +5,7 @@ export default function TopNavBar() {
         <div className="flex items-center gap-4">
           <img
             alt="MYBF Logo"
-            className="h-10 w-auto"
+            className="h-13 w-auto"
             src="/mybf-logo.png"
           />
         </div>
