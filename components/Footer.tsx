@@ -7,7 +7,7 @@ export default function Footer() {
             <img
               src="/mybf-logo.png"
               alt="MYBF Logo"
-              className="h-10 w-auto"
+              className="h-25 w-auto"
             />
           </div>
           <p className="text-on-surface-variant text-sm mb-6">
