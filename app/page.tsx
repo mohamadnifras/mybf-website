@@ -572,6 +572,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Join MYBF */}
+      <section className="py-24 bg-surface-container-lowest relative" id="why-join">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-20 items-center">
+          <div className="reveal-on-scroll active fade-in-up">
+            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Why Join MYBF</h2>
+            <h3 className="font-headline-sm text-primary mb-6">Where Entrepreneurs Connect, Learn & Grow</h3>
+            <p className="text-on-surface-variant mb-12 text-lg">
+              Joining MYBF means becoming part of a community that believes success is built through collaboration, knowledge, and meaningful relationships.
+            </p>
+            <div className="space-y-6">
+              {[
+                "Connect with ambitious entrepreneurs and business leaders.",
+                "Learn from experienced mentors and industry experts.",
+                "Access exclusive workshops, networking events, and business opportunities.",
+                "Collaborate on innovative ideas and strategic partnerships.",
+                "Grow your business while contributing to Malappuram's entrepreneurial ecosystem."
+              ].map((item, index) => (
+                <div key={index} className="flex gap-4 items-start">
+                  <div className="w-6 h-6 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
+                    <span className="material-symbols-outlined text-primary text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>check</span>
+                  </div>
+                  <p className="text-on-surface-variant">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="reveal-on-scroll active fade-in-up hidden lg:block">
+            <div className="glass p-2 rounded-[2.5rem]">
+              <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative">
+                <div
+                  className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
+                  style={{ backgroundImage: "url('/abstract-render.jpg')" }}
+                ></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-24 md:py-40">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
