@@ -607,7 +607,7 @@ export default function Home() {
               <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative">
                 <div
                   className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
-                  style={{ backgroundImage: "url('/abstract-render.jpg')" }}
+                  style={{ backgroundImage: "url('/abstract-render.png')" }}
                 ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
               </div>
@@ -666,19 +666,38 @@ export default function Home() {
                   Contact Us
                 </button>
               </div>
-              <div className="mt-20 pt-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div>
-                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Email</div>
-                  <div className="text-on-surface text-lg">mybfcommunity@gmail.com</div>
-                </div>
-                <div>
-                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Instagram & Facebook</div>
-                  <div className="text-on-surface text-lg">@mybf.community</div>
-                </div>
-                <div>
-                  <div className="text-primary mb-3 font-bold uppercase tracking-widest text-[11px]">Phone</div>
-                  <div className="text-on-surface text-lg">+91 85929 56370</div>
-                </div>
+              <div className="mt-20 pt-16 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="mailto:mybfcommunity@gmail.com" className="group glass p-4 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/10">
+                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <span className="material-symbols-outlined text-primary text-[20px]">mail</span>
+                  </div>
+                  <div className="text-primary mb-1 font-bold uppercase tracking-widest text-[9px]">Email</div>
+                  <div className="text-on-surface text-xs font-medium w-full truncate px-2">mybfcommunity@gmail.com</div>
+                </a>
+                
+                <a href="https://www.instagram.com/mybf.community/" target="_blank" rel="noopener noreferrer" className="group glass p-4 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/10">
+                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <span className="material-symbols-outlined text-primary text-[20px]">photo_camera</span>
+                  </div>
+                  <div className="text-primary mb-1 font-bold uppercase tracking-widest text-[9px]">Instagram</div>
+                  <div className="text-on-surface text-xs font-medium w-full truncate px-2">instagram@mybf.community</div>
+                </a>
+                
+                <a href="https://www.facebook.com/mybfcommunity" target="_blank" rel="noopener noreferrer" className="group glass p-4 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/10">
+                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <span className="material-symbols-outlined text-primary text-[20px]">thumb_up</span>
+                  </div>
+                  <div className="text-primary mb-1 font-bold uppercase tracking-widest text-[9px]">Facebook</div>
+                  <div className="text-on-surface text-xs font-medium w-full truncate px-2">facebook@mybf.community</div>
+                </a>
+
+                <a href="tel:+918592956370" className="group glass p-4 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-white/5 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-black/10">
+                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                    <span className="material-symbols-outlined text-primary text-[20px]">call</span>
+                  </div>
+                  <div className="text-primary mb-1 font-bold uppercase tracking-widest text-[9px]">Phone</div>
+                  <div className="text-on-surface text-xs font-medium w-full truncate px-2">+91 85929 56370</div>
+                </a>
               </div>
             </div>
           </div>
