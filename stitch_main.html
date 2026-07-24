@@ -1,0 +1,632 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MYBF | Malappuram Youth Business Forum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ffdad6",
+                    "on-background": "#e2e2e2",
+                    "surface-tint": "#8cd975",
+                    "on-secondary": "#1a3054",
+                    "on-tertiary-fixed-variant": "#354765",
+                    "secondary-container": "#32476c",
+                    "on-secondary-container": "#a0b6e1",
+                    "outline": "#8a9483",
+                    "surface-dim": "#121414",
+                    "secondary": "#b2c7f3",
+                    "on-secondary-fixed-variant": "#32476c",
+                    "on-primary-fixed-variant": "#095300",
+                    "on-tertiary": "#1e314e",
+                    "on-error": "#690005",
+                    "on-primary": "#053900",
+                    "secondary-fixed": "#d7e3ff",
+                    "surface-variant": "#333535",
+                    "surface-container": "#1e2020",
+                    "on-primary-fixed": "#022100",
+                    "on-tertiary-fixed": "#061b37",
+                    "on-surface-variant": "#c0cab8",
+                    "inverse-primary": "#236d15",
+                    "on-tertiary-container": "#172a46",
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#b5c7eb",
+                    "primary-container": "#57a144",
+                    "primary": "#8cd975",
+                    "on-secondary-fixed": "#011b3e",
+                    "tertiary-fixed": "#d6e3ff",
+                    "surface-container-highest": "#333535",
+                    "secondary-fixed-dim": "#b2c7f3",
+                    "outline-variant": "#41493c",
+                    "background": "#062043",
+                    "error-container": "#93000a",
+                    "surface-bright": "#37393a",
+                    "surface-container-lowest": "#0c0f0f",
+                    "on-surface": "#e2e2e2",
+                    "tertiary": "#b5c7eb",
+                    "surface": "#121414",
+                    "primary-fixed": "#a7f68e",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#1a1c1c",
+                    "inverse-on-surface": "#2f3131",
+                    "on-primary-container": "#043200",
+                    "surface-container-high": "#282a2b",
+                    "primary-fixed-dim": "#8cd975",
+                    "tertiary-container": "#7f91b3"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Montserrat"],
+                    "label-caps": ["Montserrat"],
+                    "display-xl": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .glass-glow:hover {
+            box-shadow: 0 0 30px rgba(65, 138, 48, 0.15);
+            border-color: rgba(140, 217, 117, 0.3);
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-glow {
+            background: radial-gradient(circle at center, rgba(140, 217, 117, 0.1) 0%, transparent 70%);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #062043;
+            color: #e2e2e2;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/10">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="MYBF Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsqFCXIENjaKxvF_pitEItgYuaNwmpkTIqtWx6I7XGhxBtUES1uqLquJweVqZ45Lu2fdf60howMUhctroFRyBiLW6CEZlXMlLDa3hPM8_Wn7LOVAhPUG7WdCV5T5NZ6zjz3ofWH3MSx3difLKEHu0N1DYnb5rgbepfkZpjiiwdSZMoa56nIypvtBMrOy3eTNOmpWmx6VWWC62TFGOHV8kQiUfw1ZpfnA0Irk04pvFZz-5SN3XOGbz5RwcPQCAIKvlHS6AsYdDFHGA">
+
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#who-we-are">Who We Are</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#vision">Vision</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#offerings">Offerings</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="#initiatives">Initiatives</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:scale-105 transition-transform">Join MYBF</button>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden">
+<!-- STITCH_SHADER_START:ANIMATION_4 class="absolute inset-0 w-full h-full" -->
+<div class="absolute inset-0 w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_4" style="display:block;width:100%;height:100%" width="1280" height="1024"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_4');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 p = (v_texCoord * 2.0 - 1.0);
+    p.x *= u_resolution.x / u_resolution.y;
+
+    // Base color from MYBF palette (#062043)
+    vec3 color1 = vec3(0.0235, 0.1255, 0.2627); 
+    // Accent color (#418a30)
+    vec3 color2 = vec3(0.2549, 0.5412, 0.1882);
+
+    float noise = 0.0;
+    for(float i = 1.0; i < 4.0; i++) {
+        uv.y += sin(uv.x * 2.0 * i + u_time * 0.2) * 0.1;
+        uv.x += cos(uv.y * 2.0 * i + u_time * 0.1) * 0.1;
+        noise += (1.0 - abs(sin(uv.y * 10.0 + u_time * 0.5))) * 0.2 / i;
+    }
+
+    vec3 finalColor = mix(color1, color2 * 0.5, noise);
+    
+    // Add a slight glow based on mouse position
+    float d = length(p - (u_mouse/u_resolution * 2.0 - 1.0));
+    finalColor += color2 * 0.2 * (1.0 / (1.0 + d * d * 5.0));
+
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_4 -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background"></div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl fade-in-up">
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-surface mb-6 leading-tight">
+                Empowering the Next Generation of <span class="text-primary">Entrepreneurs</span> in Malappuram
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                A supporting, inspiring, and equipping community building future leaders through collaborative growth and global networking.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(140,217,117,0.4)] transition-all">JOIN THE COMMUNITY</button>
+<button class="border border-white/20 text-on-surface px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-white/5 transition-all">EXPLORE MYBF</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</header>
+<!-- Who We Are -->
+<section class="py-24 md:py-40 relative" id="who-we-are">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+<div class="reveal-on-scroll active fade-in-up" style="transform: translateY(40px);">
+<div class="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full mb-6">
+<span class="font-label-caps text-[10px] text-primary uppercase tracking-[0.2em]">Our Essence</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Who We Are</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                    Malappuram Youth Business Forum (MYBF) is a premier collective of dynamic young entrepreneurs, visionaries, and business leaders dedicated to transforming the economic landscape of Malappuram.
+                </p>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                    We bridge the gap between local talent and global opportunities, providing a platform where innovation meets execution. Our community is built on the pillars of mutual support, knowledge sharing, and ethical business practices.
+                </p>
+<div class="grid grid-cols-2 gap-8 border-t border-white/5 pt-8">
+<div>
+<div class="text-primary font-display-xl text-headline-md mb-2">500+</div>
+<div class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Active Members</div>
+</div>
+<div>
+<div class="text-primary font-display-xl text-headline-md mb-2">120+</div>
+<div class="text-on-surface-variant font-label-caps text-[11px] uppercase tracking-wider">Business Verticals</div>
+</div>
+</div>
+</div>
+<div class="relative reveal-on-scroll active fade-in-up" style="transform: translateY(40px);">
+<div class="aspect-square rounded-3xl overflow-hidden glass p-4">
+<div class="w-full h-full rounded-2xl bg-cover bg-center" data-alt="A cinematic, high-end photograph of young professionals in a sleek, modern co-working space in Malappuram. They are engaged in a collaborative discussion around a digital interface, with soft glowing primary accent green lighting casting subtle reflections on glass surfaces. The mood is ambitious and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYgkNDEvUYGWfd-rPMQ5UYrLhgkp46EkYj-5bazSoNDEA-TMr9nSff25GKO5LEdQGQprvud6ccWt83nkcqxur_i1r5vdYak3TWRpdnw_nVGzulenwrEciJkYtkRjmuNlyYrXFzQErfgexX1kP2tv1HWEQdfJhP15-aXj2B64YSRxFBmjeL0dlMSmUlHzNWZXKK1FxTQIAtw5brqBkjZkBSx87vvAR3izkFF6fn5VeEwlQifPV-sl6Ixj66QsbQB9jxhLPoykAzCns')"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 glass p-6 rounded-2xl hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary">groups</span>
+</div>
+<div>
+<div class="font-bold">Founded in 2024</div>
+<div class="text-sm text-on-surface-variant">Malappuram, KL</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Visionaries -->
+<section class="py-24 bg-surface-container-lowest/50" id="visionaries">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">The Visionaries</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">The driving force behind MYBF's mission to reshape the future.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Founder -->
+<div class="glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
+<div class="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high" data-alt="A professional, high-resolution portrait of Dr. Sahid Cholayil, Founder &amp; Chairman of MYBF. He looks confident and visionary, set against a dark, atmospheric studio background with subtle emerald-green rim lighting. The style is that of a premium business magazine cover." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuARHI3vvKo1QD6DwGRDzGq41IaZyr4FnN9vCqNVe77ZrBX_yjB8tU1ftrDw18uawXgKpj8mWrJKJN6VBVj7OiRUm19ZD6I-es2JRPfPnHxM4UOoAEGJIKmnOkXLTLlfVYqRk2TCziVwB6jrba6F1iHCBFMb25ma1fZXrmD49wHc8d9rMANhuebGOztaufmdcfe-n_AkYgeHfbNwzF1SqGNlKY-_8HG7I5mIIWLdOEbmtEjfMGtWUFL3Lt6yZ9ZGDx8jKTC8n7bcn8dArQ&quot;);"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Dr. Sahid Cholayil</h3>
+<p class="text-primary font-label-caps text-label-caps uppercase mb-4">Founder &amp; Chairman</p>
+<p class="text-on-surface-variant text-sm">A global leader in healthcare and business, envisioning a thriving entrepreneurial ecosystem for Malappuram's youth.</p>
+</div>
+<!-- Co-Founder 1 -->
+<div class="glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up"><div class="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high" data-alt="A sharp, premium portrait of Shibili Rahman K.P., Co-Founder of MYBF. The photography uses high-key shadows and soft green ambient highlights to create a tech-forward executive feel. He has a focused expression that reflects professional authority." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDPZpM5_LpmtSVoKGWMZkT-wY75tAVBJLlgzZqwShYcU-rz80_ryw-XmwawTkHLfQV_zjg5W_4w3ftd7JmyFm19e4mnVk0FrbiyN3vBO9i_F0F-XrZ9bsLR5D0x7BoLcRAnNEMYahz7f59eIZZsTUUYHdGWDKSvP6TkVl14CsMS5TNBKccEpfhihmQhdlOmZ1aOrg1cwHwBO7FX02nsfjRy9xYpaNkVMI8YkHtSLgBIfopb2jVEpRNCINYEoKatV5tXyhL-syr5HRh0ow&quot;);"></div><h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Shibili Rahman K.P.</h3><p class="text-primary font-label-caps text-label-caps uppercase mb-4">Co-Founder</p><p class="text-on-surface-variant text-sm">Dedicated to operations and scale, ensuring every member of the forum finds the resources they need to succeed.</p></div><div class="glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
+<div class="w-full aspect-[4/5] rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high" data-alt="A professional corporate headshot of Muhammed Nabeel P.A., Co-Founder of MYBF. He is wearing modern business attire, looking approachable and intelligent. The lighting is sophisticated and cinematic, consistent with the MYBF dark and green brand identity." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCVNrTDfmic-4vkQdOsdZJVrj6mjxfUBXOf9MGApICv0b0JPBLGqYu6V1nP7JNNQih60TKBpqDipxdnVJOLqazFdiM79-JRjCw6J2FC6rctxBg-kffR9z4IWRovLRCjdPstX8COAjATDAPFp1sEAu7T2nIX8M7rgIrroGIpZ42Z-cloLVKIKm3y4NExJMMvZ_dCNdKNjjBXgBmy8SeNPLcKdGd0u1AkFFk80BZz2n-eHf-8itvxTcGXBjHiB0SiKqap1SdunwNPHkTwkw&quot;);"></div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Muhammed Nabeel P.A.</h3>
+<p class="text-primary font-label-caps text-label-caps uppercase mb-4">Co-Founder</p>
+<p class="text-on-surface-variant text-sm">Leading strategic initiatives and community engagement to foster innovation among the next generation of business minds.</p>
+</div>
+<!-- Co-Founder 2 -->
+
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-24 md:py-40" id="vision">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-gutter">
+<div class="glass p-12 rounded-3xl reveal-on-scroll relative overflow-hidden group active fade-in-up">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+<span class="material-symbols-outlined text-primary text-5xl mb-8">visibility</span>
+<h2 class="font-headline-lg text-headline-md text-on-surface mb-6">Our Vision</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    To establish Malappuram as a globally recognized hub for entrepreneurship, where young business leaders are empowered with the resources, connections, and mindset to create sustainable, world-class enterprises.
+                </p>
+</div>
+<div class="glass p-12 rounded-3xl reveal-on-scroll relative overflow-hidden group active fade-in-up">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+<span class="material-symbols-outlined text-primary text-5xl mb-8">rocket_launch</span>
+<h2 class="font-headline-lg text-headline-md text-on-surface mb-6">Our Mission</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    To support, inspire, and equip Malappuram's youth entrepreneurs through mentorship, strategic networking, and continuous learning, fostering a collaborative culture that drives individual and collective prosperity.
+                </p>
+</div>
+</div>
+</section>
+<!-- What We Offer -->
+<section class="py-24 bg-surface-container-lowest" id="offerings">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">What We Offer</h2>
+<p class="text-on-surface-variant">Comprehensive tools and platforms designed specifically for the modern entrepreneur.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps uppercase flex items-center gap-2 group" href="#">
+                View Membership Benefits 
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Mentorship</h3>
+<p class="text-on-surface-variant text-sm">Direct access to industry veterans and successful founders who provide actionable guidance for your business journey.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">L &amp; D</h3>
+<p class="text-on-surface-variant text-sm">Workshops, seminars, and masterclasses designed to sharpen your technical and leadership skills in the 21st-century market.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Networking</h3>
+<p class="text-on-surface-variant text-sm">Curated events that connect you with potential partners, investors, and peers who share your drive and ambition.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">partner_exchange</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Consultation</h3>
+<p class="text-on-surface-variant text-sm">Strategic business advice from experts to help you navigate regulatory challenges and market complexities.</p>
+</div>
+<!-- Card 5 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Collaboration</h3>
+<p class="text-on-surface-variant text-sm">A vibrant ecosystem where ideas merge to form joint ventures and innovative co-branded initiatives.</p>
+</div>
+<!-- Card 6 -->
+<div class="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">Business Growth</h3>
+<p class="text-on-surface-variant text-sm">Support in scaling operations, accessing new markets, and identifying growth opportunities locally and globally.</p>
+</div>
+</div>
+</section>
+<!-- Initiatives -->
+<section class="py-24" id="initiatives">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">MYBF Initiatives</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Dynamic platforms and events that bring our community to life.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group rounded-3xl overflow-hidden reveal-on-scroll aspect-video active fade-in-up">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A high-energy business conclave in a premium auditorium. The stage is lit with MYBF green and blue branding, and a large audience of young entrepreneurs is captured in silhouette. The focus is on the scale and professional atmosphere of the event." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChnK11Gx6kHqSBctFodHOI8r0t1E6Ag6ai6yZ7e8aIZQFtzmguBZccbEnRpPEskSm8pFxWpD__JdSPd3YaXLng__7ts4IbjF2n5QDBPN5DeutS0Oo0Lai_PwOYpJ2vS93DUXoMWK5FpaHExMY6FjcJZE70Npm-5JZiMgQrVpvtHvLG95hf_XnHgG5G--CoWbhVSwpFxYTjafUeYHhnu1oEGWGDRJNnsN1T0pK8Pad9pBNrxUiVu4ejFlNnS3AqbtVIQaEs_HeIw9w')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<h3 class="font-headline-md text-on-surface mb-2">Grand Conclaves</h3>
+<p class="text-on-surface-variant">Annual flagship events featuring global keynotes and innovation awards.</p>
+</div>
+</div>
+<div class="relative group rounded-3xl overflow-hidden reveal-on-scroll aspect-video active fade-in-up">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A group of young business leaders in stylish casual wear visiting a cutting-edge international tech facility. They are seen discussing innovative industrial processes, conveying a sense of curiosity and global exposure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXjl7g9h_E7t9BkrMxF1oir-x_ViaUyhgCXcyiPL3z8TbgUjrEAgY22_n-_tqiBbzAvJwInWOdXdWEcVQmFjM6CaCSlDixOWgF3CGK2ie-RMNRvIJtnlL88ppjlh5vSQu-rgLM5x650Gzpq3zINpNV2qCkSBh-Nh0wObnw8v9ea4fOCADYHou1Eal5vrggD9pWZx95zsP7RvaPTCWluJeTtPwxMAASiOyWIMVkZDaUd8krgveaQk4bPzcKzyPBisDAxPLp4F3V-Po')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<h3 class="font-headline-md text-on-surface mb-2">Global Tours</h3>
+<p class="text-on-surface-variant">Industrial visits and exposure tours to global business hubs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Join Checkbox -->
+<section class="py-24 bg-surface-container-low/30 relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-20 items-center">
+<div class="reveal-on-scroll active fade-in-up">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Why Join MYBF?</h2>
+<p class="text-on-surface-variant mb-12">Membership in MYBF is more than just a title; it's an investment in your future and the community's progress.</p>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Exclusive Access</h4>
+<p class="text-sm text-on-surface-variant">Gain entry to members-only lounges, VIP networking sessions, and premium business resources.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Brand Visibility</h4>
+<p class="text-sm text-on-surface-variant">Showcase your business through our forum’s extensive network and public relations channels.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2">Policy Advocacy</h4>
+<p class="text-sm text-on-surface-variant">Be part of a unified voice that represents the interests of young businesses before government bodies.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll active fade-in-up">
+<div class="glass p-1 rounded-3xl">
+<div class="aspect-video rounded-2xl overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A stylized, cinematic 3D abstract render representing a connected network of nodes in vibrant MYBF green. The background is a deep midnight blue with subtle light streaks, symbolizing high-speed growth and digital synergy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_HFUSUkaJgs-UEvLRzGhb8_2LJuDlb-Oy5Y0KRF2CN64Q_UuRo7xKPJe7cPjH_6WNV8stSnN1kg6KS8oEBYZnKAHOutweN0u_yT3FEZcmU-HQWrH0GsIXyQMHrCAfuJ96PYlVegzV1uMKjpSwgkJzCebbrcpbKr_5_47PwODgTEZKKstYRcm6Ywxof9LuIHOTiruSx5mqR16NxX8aqjUj1qJ0guq2e9JYor8ZcFFYvr7SqaO7pYLWnaR15vioJxpR7ZXqUOS-erY')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 md:py-40">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="glass bg-primary/5 border-primary/20 p-12 md:p-24 rounded-[3rem] text-center relative overflow-hidden">
+<div class="absolute -top-1/2 -left-1/4 w-[100%] h-[150%] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Ready to Build the Future?</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                        Take the first step towards transforming your business vision into a legacy. Join the most influential business community in Malappuram today.
+                    </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-label-caps uppercase tracking-[0.2em] hover:shadow-[0_0_40px_rgba(140,217,117,0.5)] transition-all">Apply for Membership</button>
+</div>
+<div class="mt-16 pt-16 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-10">
+<div>
+<div class="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Email Us</div>
+<div class="text-on-surface">hello@mybf.com</div>
+</div>
+<div>
+<div class="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Call Us</div>
+<div class="text-on-surface">+91 98765 43210</div>
+</div>
+<div>
+<div class="text-primary mb-2 font-bold uppercase tracking-widest text-[10px]">Visit Us</div>
+<div class="text-on-surface">MYBF Hub, Malappuram</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest w-full pt-20 pb-10 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="mb-6"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvu9bnmYQ9ltCNoiVS8jTte7iOg0Br72N-LFMjUDGOTbjbxwpNnDYa84nEAOrIDrJizQ-lbeLjruffcUKqcIPc21O5sT8dYaZaAg0WroIUuy0d7i9rbbAOiIGRUGTcjkWfUoXsOTs79lFaHztjdrMK341nBT-_55l1sh2BrPz479U2MaaMdwiF_HAQZwQHqCioH3pHRr5-NRd3fqW2Eau5r3w2VK6Z2fmW86Ur2oaDerhL3Hx4OSywMp8yiEf4beCUXQjT4oZ6mJs" alt="MYBF Logo" class="h-10 w-auto"></div>
+<p class="text-on-surface-variant text-sm mb-6">Empowering the youth of Malappuram through entrepreneurship, innovation, and community.</p>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Who We Are</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Vision</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Initiatives</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Membership</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Social</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">Facebook</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">Instagram</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-white/5 text-center md:text-left">
+<p class="text-on-surface-variant text-sm font-body-md text-body-md">© 2024 Malappuram Youth Business Forum. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body></html>

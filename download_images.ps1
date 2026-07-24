@@ -1,0 +1,17 @@
+$urls = @{
+    "mybf-logo.png" = "https://lh3.googleusercontent.com/aida-public/AB6AXuCsqFCXIENjaKxvF_pitEItgYuaNwmpkTIqtWx6I7XGhxBtUES1uqLquJweVqZ45Lu2fdf60howMUhctroFRyBiLW6CEZlXMlLDa3hPM8_Wn7LOVAhPUG7WdCV5T5NZ6zjz3ofWH3MSx3difLKEHu0N1DYnb5rgbepfkZpjiiwdSZMoa56nIypvtBMrOy3eTNOmpWmx6VWWC62TFGOHV8kQiUfw1ZpfnA0Irk04pvFZz-5SN3XOGbz5RwcPQCAIKvlHS6AsYdDFHGA"
+    "who-we-are-bg.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuAYgkNDEvUYGWfd-rPMQ5UYrLhgkp46EkYj-5bazSoNDEA-TMr9nSff25GKO5LEdQGQprvud6ccWt83nkcqxur_i1r5vdYak3TWRpdnw_nVGzulenwrEciJkYtkRjmuNlyYrXFzQErfgexX1kP2tv1HWEQdfJhP15-aXj2B64YSRxFBmjeL0dlMSmUlHzNWZXKK1FxTQIAtw5brqBkjZkBSx87vvAR3izkFF6fn5VeEwlQifPV-sl6Ixj66QsbQB9jxhLPoykAzCns"
+    "founder.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuARHI3vvKo1QD6DwGRDzGq41IaZyr4FnN9vCqNVe77ZrBX_yjB8tU1ftrDw18uawXgKpj8mWrJKJN6VBVj7OiRUm19ZD6I-es2JRPfPnHxM4UOoAEGJIKmnOkXLTLlfVYqRk2TCziVwB6jrba6F1iHCBFMb25ma1fZXrmD49wHc8d9rMANhuebGOztaufmdcfe-n_AkYgeHfbNwzF1SqGNlKY-_8HG7I5mIIWLdOEbmtEjfMGtWUFL3Lt6yZ9ZGDx8jKTC8n7bcn8dArQ"
+    "co-founder-1.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuDPZpM5_LpmtSVoKGWMZkT-wY75tAVBJLlgzZqwShYcU-rz80_ryw-XmwawTkHLfQV_zjg5W_4w3ftd7JmyFm19e4mnVk0FrbiyN3vBO9i_F0F-XrZ9bsLR5D0x7BoLcRAnNEMYahz7f59eIZZsTUUYHdGWDKSvP6TkVl14CsMS5TNBKccEpfhihmQhdlOmZ1aOrg1cwHwBO7FX02nsfjRy9xYpaNkVMI8YkHtSLgBIfopb2jVEpRNCINYEoKatV5tXyhL-syr5HRh0ow"
+    "co-founder-2.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuCVNrTDfmic-4vkQdOsdZJVrj6mjxfUBXOf9MGApICv0b0JPBLGqYu6V1nP7JNNQih60TKBpqDipxdnVJOLqazFdiM79-JRjCw6J2FC6rctxBg-kffR9z4IWRovLRCjdPstX8COAjATDAPFp1sEAu7T2nIX8M7rgIrroGIpZ42Z-cloLVKIKm3y4NExJMMvZ_dCNdKNjjBXgBmy8SeNPLcKdGd0u1AkFFk80BZz2n-eHf-8itvxTcGXBjHiB0SiKqap1SdunwNPHkTwkw"
+    "conclaves.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuChnK11Gx6kHqSBctFodHOI8r0t1E6Ag6ai6yZ7e8aIZQFtzmguBZccbEnRpPEskSm8pFxWpD__JdSPd3YaXLng__7ts4IbjF2n5QDBPN5DeutS0Oo0Lai_PwOYpJ2vS93DUXoMWK5FpaHExMY6FjcJZE70Npm-5JZiMgQrVpvtHvLG95hf_XnHgG5G--CoWbhVSwpFxYTjafUeYHhnu1oEGWGDRJNnsN1T0pK8Pad9pBNrxUiVu4ejFlNnS3AqbtVIQaEs_HeIw9w"
+    "global-tours.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuDXjl7g9h_E7t9BkrMxF1oir-x_ViaUyhgCXcyiPL3z8TbgUjrEAgY22_n-_tqiBbzAvJwInWOdXdWEcVQmFjM6CaCSlDixOWgF3CGK2ie-RMNRvIJtnlL88ppjlh5vSQu-rgLM5x650Gzpq3zINpNV2qCkSBh-Nh0wObnw8v9ea4fOCADYHou1Eal5vrggD9pWZx95zsP7RvaPTCWluJeTtPwxMAASiOyWIMVkZDaUd8krgveaQk4bPzcKzyPBisDAxPLp4F3V-Po"
+    "abstract-render.jpg" = "https://lh3.googleusercontent.com/aida-public/AB6AXuA_HFUSUkaJgs-UEvLRzGhb8_2LJuDlb-Oy5Y0KRF2CN64Q_UuRo7xKPJe7cPjH_6WNV8stSnN1kg6KS8oEBYZnKAHOutweN0u_yT3FEZcmU-HQWrH0GsIXyQMHrCAfuJ96PYlVegzV1uMKjpSwgkJzCebbrcpbKr_5_47PwODgTEZKKstYRcm6Ywxof9LuIHOTiruSx5mqR16NxX8aqjUj1qJ0guq2e9JYor8ZcFFYvr7SqaO7pYLWnaR15vioJxpR7ZXqUOS-erY"
+}
+
+foreach ($item in $urls.GetEnumerator()) {
+    $outFile = Join-Path -Path "public" -ChildPath $item.Key
+    Write-Host "Downloading $($item.Key)..."
+    Invoke-WebRequest -Uri $item.Value -OutFile $outFile
+}
+Write-Host "All images downloaded successfully."
