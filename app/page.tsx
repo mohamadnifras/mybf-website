@@ -162,21 +162,26 @@ export default function Home() {
 
       {/* Vision & Mission */}
       <section className="py-24 md:py-40" id="vision">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Our Purpose</h2>
+        </div>
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-gutter">
           <div className="glass p-12 rounded-3xl reveal-on-scroll relative overflow-hidden group active fade-in-up">
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
             <span className="material-symbols-outlined text-primary text-5xl mb-8">visibility</span>
-            <h2 className="font-headline-lg text-headline-md text-on-surface mb-6">Our Vision</h2>
+            <h2 className="font-headline-lg text-headline-md text-on-surface mb-2">Our Vision</h2>
+            <h3 className="text-primary font-label-caps text-sm uppercase tracking-widest mb-6">A Connected & Progressive Business Community</h3>
             <p className="text-on-surface-variant text-lg leading-relaxed">
-              To establish Malappuram as a globally recognized hub for entrepreneurship, where young business leaders are empowered with the resources, connections, and mindset to create sustainable, world-class enterprises.
+              To build Malappuram into a thriving entrepreneurial hub where young entrepreneurs collaborate, innovate, and create businesses that generate lasting economic and social value.
             </p>
           </div>
           <div className="glass p-12 rounded-3xl reveal-on-scroll relative overflow-hidden group active fade-in-up">
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
             <span className="material-symbols-outlined text-primary text-5xl mb-8">rocket_launch</span>
-            <h2 className="font-headline-lg text-headline-md text-on-surface mb-6">Our Mission</h2>
+            <h2 className="font-headline-lg text-headline-md text-on-surface mb-2">Our Mission</h2>
+            <h3 className="text-primary font-label-caps text-sm uppercase tracking-widest mb-6">Connecting Entrepreneurs. Creating Opportunities.</h3>
             <p className="text-on-surface-variant text-lg leading-relaxed">
-              To support, inspire, and equip Malappuram&apos;s youth entrepreneurs through mentorship, strategic networking, and continuous learning, fostering a collaborative culture that drives individual and collective prosperity.
+              To empower entrepreneurs through networking, mentorship, business education, collaboration, and access to opportunities that help them build, scale, and sustain successful businesses.
             </p>
           </div>
         </div>
