@@ -302,32 +302,153 @@ export default function Home() {
       </section>
 
       {/* Initiatives */}
-      <section className="py-24" id="initiatives">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+      <section className="py-24 md:py-40 relative overflow-hidden" id="initiatives">
+        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-20 relative z-10 reveal-on-scroll active fade-in-up">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">MYBF Initiatives</h2>
-          <p className="text-on-surface-variant max-w-2xl mx-auto">Dynamic platforms and events that bring our community to life.</p>
+          <p className="text-on-surface-variant max-w-2xl mx-auto">Creating Opportunities Beyond Networking</p>
         </div>
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="relative group rounded-3xl overflow-hidden reveal-on-scroll aspect-video active fade-in-up">
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-              style={{ backgroundImage: "url('/conclaves.jpg')" }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-10">
-              <h3 className="font-headline-md text-on-surface mb-2">Grand Conclaves</h3>
-              <p className="text-on-surface-variant">Annual flagship events featuring global keynotes and innovation awards.</p>
+        
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10">
+          {/* Item 1 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">campaign</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">MYBF Conclaves</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Large-scale entrepreneurship events featuring business leaders, innovators, and industry experts.</p>
+              </div>
             </div>
           </div>
-          <div className="relative group rounded-3xl overflow-hidden reveal-on-scroll aspect-video active fade-in-up">
-            <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-              style={{ backgroundImage: "url('/global-tours.jpg')" }}
-            ></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-10">
-              <h3 className="font-headline-md text-on-surface mb-2">Global Tours</h3>
-              <p className="text-on-surface-variant">Industrial visits and exposure tours to global business hubs.</p>
+
+          {/* Item 2 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">workspace_premium</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">MYBF Club</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">An exclusive community designed for continuous networking, collaboration, and business growth.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 3 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">explore</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Business Tours</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Visits to successful companies, startups, and industries to gain practical business insights.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 4 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">volunteer_activism</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Social Commitment</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Community initiatives that promote entrepreneurship, youth empowerment, and social development.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 5 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">groups</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">MYBF Gatherings</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Regular networking meetups for entrepreneurs to exchange ideas and build meaningful relationships.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 6 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">mic</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Panel Discussions</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Interactive sessions with experts discussing business trends, innovation, and entrepreneurship.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 7 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">co_present</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Webinars</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Online learning sessions covering business strategy, leadership, technology, and entrepreneurship.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 8 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">handshake</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Investor Meetups</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Connecting entrepreneurs with investors, mentors, and funding opportunities.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 9 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">emoji_events</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">MYBF Awards</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Recognizing entrepreneurs, startups, and business leaders making a significant impact in Malappuram.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Item 10 */}
+          <div className="group relative p-8 rounded-3xl bg-surface-container-low/30 border border-white/5 hover:bg-surface-container-low/80 hover:border-white/10 transition-all duration-500 overflow-hidden cursor-pointer reveal-on-scroll active fade-in-up">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="flex items-start gap-6 relative z-10">
+              <div className="w-16 h-16 bg-background/50 border border-white/10 rounded-2xl flex-shrink-0 flex items-center justify-center group-hover:scale-110 group-hover:border-primary/30 group-hover:shadow-[0_0_30px_rgba(140,217,117,0.15)] transition-all duration-500">
+                <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-3xl">newspaper</span>
+              </div>
+              <div>
+                <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors duration-300">Blog & Articles</h3>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Entrepreneurial insights, success stories, business strategies, and industry updates.</p>
+              </div>
             </div>
           </div>
         </div>
