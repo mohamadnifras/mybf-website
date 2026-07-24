@@ -454,51 +454,120 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Join Checkbox */}
-      <section className="py-24 bg-surface-container-low/30 relative">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-20 items-center">
-          <div className="reveal-on-scroll active fade-in-up">
-            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">Why Join MYBF?</h2>
-            <p className="text-on-surface-variant mb-12">Membership in MYBF is more than just a title; it&apos;s an investment in your future and the community&apos;s progress.</p>
-            <div className="space-y-8">
-              <div className="flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
-                  <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-on-surface mb-2">Exclusive Access</h4>
-                  <p className="text-sm text-on-surface-variant">Gain entry to members-only lounges, VIP networking sessions, and premium business resources.</p>
-                </div>
-              </div>
-              <div className="flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
-                  <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-on-surface mb-2">Brand Visibility</h4>
-                  <p className="text-sm text-on-surface-variant">Showcase your business through our forum’s extensive network and public relations channels.</p>
-                </div>
-              </div>
-              <div className="flex gap-6 items-start">
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex-shrink-0 flex items-center justify-center mt-1">
-                  <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-on-surface mb-2">Policy Advocacy</h4>
-                  <p className="text-sm text-on-surface-variant">Be part of a unified voice that represents the interests of young businesses before government bodies.</p>
-                </div>
-              </div>
+      {/* Who Can Join */}
+      <section className="py-24 relative overflow-hidden" id="who-can-join">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6 reveal-on-scroll active fade-in-up">Who Can Join?</h2>
+          <p className="text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg reveal-on-scroll active fade-in-up">
+            MYBF welcomes individuals who are passionate about entrepreneurship and business.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Aspiring Entrepreneurs</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Startup Founders</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Business Owners</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Professionals</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Freelancers</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Students with Business Ideas</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Mentors & Industry Experts</span>
+            </div>
+            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+              <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              <span className="text-on-surface font-medium">Investors & Business Leaders</span>
             </div>
           </div>
-          <div className="reveal-on-scroll active fade-in-up">
-            <div className="glass p-1 rounded-3xl">
-              <div className="aspect-video rounded-2xl overflow-hidden">
-                <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{ backgroundImage: "url('/abstract-render.jpg')" }}
-                ></div>
-              </div>
+        </div>
+      </section>
+
+      {/* Member Benefits */}
+      <section className="py-24 bg-surface-container-low/30 relative" id="member-benefits">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4 reveal-on-scroll active fade-in-up">Membership Benefits</h2>
+          <p className="text-on-surface-variant max-w-2xl mx-auto reveal-on-scroll active fade-in-up">Unlock the resources, network, and recognition to propel your business forward.</p>
+        </div>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Benefit 1 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">hub</span>
             </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Exclusive Business Network</h3>
+          </div>
+          {/* Benefit 2 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">groups</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Founder Meetups</h3>
+          </div>
+          {/* Benefit 3 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">share</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Business Referrals</h3>
+          </div>
+          {/* Benefit 4 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">psychology</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Mentorship Access</h3>
+          </div>
+          {/* Benefit 5 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">forum</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Business Consultation</h3>
+          </div>
+          {/* Benefit 6 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">school</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Learning Programs</h3>
+          </div>
+          {/* Benefit 7 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">handshake</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Investor Connections</h3>
+          </div>
+          {/* Benefit 8 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">group_work</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Collaboration Opportunities</h3>
+          </div>
+          {/* Benefit 9 */}
+          <div className="glass p-6 rounded-2xl flex items-center gap-4 reveal-on-scroll active fade-in-up hover:bg-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <span className="material-symbols-outlined text-primary">workspace_premium</span>
+            </div>
+            <h3 className="font-headline-sm text-base text-on-surface">Member Recognition</h3>
           </div>
         </div>
       </section>
