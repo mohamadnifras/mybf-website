@@ -187,6 +187,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Core Values */}
+      <section className="py-24 bg-surface-container-lowest/30 relative" id="core-values">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Core Values</h2>
+          <p className="text-on-surface-variant max-w-xl mx-auto">The Values That Drive Our Community</p>
+        </div>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          {/* Value 1 */}
+          <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+            <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">handshake</span>
+            </div>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Collaboration</h3>
+            <p className="text-on-surface-variant text-sm">We grow stronger together.</p>
+          </div>
+          {/* Value 2 */}
+          <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+            <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">verified_user</span>
+            </div>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Integrity</h3>
+            <p className="text-on-surface-variant text-sm">Building trust through ethical entrepreneurship.</p>
+          </div>
+          {/* Value 3 */}
+          <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+            <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">lightbulb</span>
+            </div>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Innovation</h3>
+            <p className="text-on-surface-variant text-sm">Encouraging new ideas and creative thinking.</p>
+          </div>
+          {/* Value 4 */}
+          <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+            <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">flag</span>
+            </div>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Leadership</h3>
+            <p className="text-on-surface-variant text-sm">Inspiring entrepreneurs to lead with purpose.</p>
+          </div>
+          {/* Value 5 */}
+          <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
+            <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+              <span className="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+            </div>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Community Impact</h3>
+            <p className="text-on-surface-variant text-sm">Creating businesses that benefit society.</p>
+          </div>
+        </div>
+      </section>
+
       {/* What We Offer */}
       <section className="py-24 bg-surface-container-lowest" id="offerings">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
