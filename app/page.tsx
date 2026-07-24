@@ -56,18 +56,18 @@ export default function Home() {
             <p className="font-body-lg text-body-md text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed transition-colors duration-700 group-hover:text-on-surface">
               MYBF is a thriving entrepreneurial community that empowers ambitious individuals to connect, collaborate, and build successful businesses. By bringing together entrepreneurs, founders, professionals, and innovators, we create an ecosystem where ideas are transformed into opportunities and businesses achieve sustainable growth.
             </p>
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
               <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps text-sm uppercase tracking-widest hover:shadow-[0_0_30px_rgba(140,217,117,0.6)] hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
+                className="bg-primary text-on-primary px-8 py-3.5 rounded-full font-label-caps text-xs uppercase tracking-widest hover:shadow-[0_0_30px_rgba(140,217,117,0.6)] hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >
                 JOIN THE COMMUNITY
               </a>
               <a 
                 href="#who-we-are" 
-                className="glass border border-white/20 text-on-surface px-10 py-5 rounded-full font-label-caps text-sm uppercase tracking-widest hover:bg-white/10 hover:border-white/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
+                className="glass border border-white/20 text-on-surface px-8 py-3.5 rounded-full font-label-caps text-xs uppercase tracking-widest hover:bg-white/10 hover:border-white/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >
                 EXPLORE MYBF
               </a>
