@@ -37,29 +37,47 @@ export default function Home() {
       <header className="relative h-screen flex items-center justify-center overflow-hidden">
         <ShaderCanvas />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/40 to-background"></div>
-        <div className="relative z-10 text-center px-margin-mobile max-w-4xl fade-in-up">
-          <h1 className="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-surface mb-6 leading-tight">
-            Empowering the Next Generation of <span className="text-primary">Entrepreneurs</span> in Malappuram
-          </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
-            MYBF is a thriving entrepreneurial community that empowers ambitious individuals to connect, collaborate, and build successful businesses. By bringing together entrepreneurs, founders, professionals, and innovators, we create an ecosystem where ideas are transformed into opportunities and businesses achieve sustainable growth.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:shadow-[0_0_20px_rgba(140,217,117,0.4)] transition-all inline-flex items-center justify-center"
-            >
-              JOIN THE COMMUNITY
-            </a>
-            <button className="border border-white/20 text-on-surface px-10 py-4 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-white/5 transition-all">
-              EXPLORE MYBF
-            </button>
+        <div className="relative z-10 text-center px-margin-mobile max-w-5xl fade-in-up group">
+          {/* Subtle animated glow behind the text */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/10 rounded-full blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
+          
+          <div className="relative z-10 p-4 md:p-12 rounded-[3rem] transition-all duration-700">
+            <h1 className="font-display-xl text-5xl md:text-6xl lg:text-[76px] text-on-surface mb-6 leading-[1.1] transition-transform duration-700 group-hover:scale-[1.02] max-w-5xl mx-auto">
+              Empowering the Next Generation <br className="hidden md:block" />
+              of{" "}
+              <span className="relative inline-block">
+                <span className="absolute -inset-2 bg-primary/30 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></span>
+                <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#a7f68e] drop-shadow-[0_0_15px_rgba(140,217,117,0.2)] group-hover:drop-shadow-[0_0_25px_rgba(140,217,117,0.6)] transition-all duration-700">
+                  Entrepreneurs
+                </span>
+              </span>{" "}
+              in Malappuram
+            </h1>
+            <p className="font-body-lg text-body-md text-on-surface-variant mb-10 max-w-3xl mx-auto leading-relaxed transition-colors duration-700 group-hover:text-on-surface">
+              MYBF is a thriving entrepreneurial community that empowers ambitious individuals to connect, collaborate, and build successful businesses. By bringing together entrepreneurs, founders, professionals, and innovators, we create an ecosystem where ideas are transformed into opportunities and businesses achieve sustainable growth.
+            </p>
+            <div className="flex flex-col md:flex-row gap-6 justify-center">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc3g6ZQQKllYGp_g5hO7slVmmMA-dpR4LlQ_tL_KOylQNadlA/viewform?usp=dialog" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-primary text-on-primary px-10 py-5 rounded-full font-label-caps text-sm uppercase tracking-widest hover:shadow-[0_0_30px_rgba(140,217,117,0.6)] hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
+              >
+                JOIN THE COMMUNITY
+              </a>
+              <a 
+                href="#who-we-are" 
+                className="glass border border-white/20 text-on-surface px-10 py-5 rounded-full font-label-caps text-sm uppercase tracking-widest hover:bg-white/10 hover:border-white/40 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
+              >
+                EXPLORE MYBF
+              </a>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 animate-bounce">
-          <span className="material-symbols-outlined text-primary">expand_more</span>
+        <div className="absolute bottom-1 left-1/2 -translate-x-1/2 animate-bounce">
+          <a href="#who-we-are" className="w-12 h-12 rounded-full glass flex items-center justify-center text-primary hover:bg-primary/20 transition-colors">
+            <span className="material-symbols-outlined">expand_more</span>
+          </a>
         </div>
       </header>
 
