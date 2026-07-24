@@ -2,13 +2,13 @@ export default function TopNavBar() {
   return (
     <nav className="sticky top-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/10">
       <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-        <div className="flex items-center gap-4">
+        <a href="/" className="flex items-center gap-4">
           <img
             alt="MYBF Logo"
             className="h-13 w-auto"
             src="/mybf-logo.png"
           />
-        </div>
+        </a>
         <div className="hidden md:flex gap-8 items-center">
           <a
             className="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors"

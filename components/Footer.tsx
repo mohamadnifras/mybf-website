@@ -3,13 +3,13 @@ export default function Footer() {
     <footer className="bg-surface-container-lowest w-full pt-20 pb-10 border-t border-white/5">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="col-span-1 md:col-span-1">
-          <div className="mb-6">
+          <a href="/" className="mb-6 block">
             <img
               src="/mybf-logo.png"
               alt="MYBF Logo"
               className="h-25 w-auto"
             />
-          </div>
+          </a>
           <p className="text-on-surface-variant text-sm mb-6">
             Empowering the youth of Malappuram through entrepreneurship, innovation, and community.
           </p>
