@@ -242,7 +242,7 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">What We Offer</h2>
-            <p className="text-on-surface-variant">Comprehensive tools and platforms designed specifically for the modern entrepreneur.</p>
+            <p className="text-on-surface-variant">Supporting Every Stage of Your Entrepreneurial Journey</p>
           </div>
           <a className="text-primary font-label-caps text-label-caps uppercase flex items-center gap-2 group" href="#">
             View Membership Benefits
@@ -256,15 +256,15 @@ export default function Home() {
               <span className="material-symbols-outlined text-primary text-3xl">psychology</span>
             </div>
             <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Mentorship</h3>
-            <p className="text-on-surface-variant text-sm">Direct access to industry veterans and successful founders who provide actionable guidance for your business journey.</p>
+            <p className="text-on-surface-variant text-sm">Receive practical guidance from experienced entrepreneurs, mentors, and business leaders.</p>
           </div>
           {/* Card 2 */}
           <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
               <span className="material-symbols-outlined text-primary text-3xl">school</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">L & D</h3>
-            <p className="text-on-surface-variant text-sm">Workshops, seminars, and masterclasses designed to sharpen your technical and leadership skills in the 21st-century market.</p>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Learning & Development</h3>
+            <p className="text-on-surface-variant text-sm">Participate in workshops, masterclasses, and business-focused learning experiences.</p>
           </div>
           {/* Card 3 */}
           <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
@@ -272,31 +272,31 @@ export default function Home() {
               <span className="material-symbols-outlined text-primary text-3xl">hub</span>
             </div>
             <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Networking</h3>
-            <p className="text-on-surface-variant text-sm">Curated events that connect you with potential partners, investors, and peers who share your drive and ambition.</p>
+            <p className="text-on-surface-variant text-sm">Expand your professional network through community meetups and industry events.</p>
           </div>
           {/* Card 4 */}
           <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
               <span className="material-symbols-outlined text-primary text-3xl">partner_exchange</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Consultation</h3>
-            <p className="text-on-surface-variant text-sm">Strategic business advice from experts to help you navigate regulatory challenges and market complexities.</p>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Business Consultation</h3>
+            <p className="text-on-surface-variant text-sm">Access expert advice on branding, marketing, finance, business strategy, and growth.</p>
           </div>
           {/* Card 5 */}
           <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
               <span className="material-symbols-outlined text-primary text-3xl">handshake</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Collaboration</h3>
-            <p className="text-on-surface-variant text-sm">A vibrant ecosystem where ideas merge to form joint ventures and innovative co-branded initiatives.</p>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Collaboration & Partnerships</h3>
+            <p className="text-on-surface-variant text-sm">Connect with entrepreneurs and organizations for partnerships, referrals, and joint ventures.</p>
           </div>
           {/* Card 6 */}
           <div className="glass glass-glow p-8 rounded-3xl reveal-on-scroll active fade-in-up">
             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
               <span className="material-symbols-outlined text-primary text-3xl">trending_up</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Business Growth</h3>
-            <p className="text-on-surface-variant text-sm">Support in scaling operations, accessing new markets, and identifying growth opportunities locally and globally.</p>
+            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-4">Business Growth Opportunities</h3>
+            <p className="text-on-surface-variant text-sm">Discover opportunities for funding, market expansion, investor connections, and business development.</p>
           </div>
         </div>
       </section>
