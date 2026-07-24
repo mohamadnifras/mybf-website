@@ -43,17 +43,32 @@ export default function Footer() {
           <h4 className="text-on-surface font-bold mb-6">Social</h4>
           <ul className="space-y-4">
             <li>
-              <a className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+              <a 
+                className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" 
+                href="https://www.facebook.com/mybfcommunity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Facebook
               </a>
             </li>
             <li>
-              <a className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+              <a 
+                className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" 
+                href="https://www.instagram.com/mybf.community/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
               </a>
             </li>
             <li>
-              <a className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#">
+              <a 
+                className="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" 
+                href="https://www.linkedin.com/in/mybf-community-171906424/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </a>
             </li>
