@@ -118,48 +118,50 @@ export default function Home() {
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">The Vision Behind MYBF</h2>
           <p className="text-on-surface-variant max-w-xl mx-auto">The driving force behind MYBF&apos;s mission to reshape the future.</p>
         </div>
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          {/* Founder */}
-          <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
-            <div
-              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
-              style={{ backgroundImage: 'url("/founder.jpg")' }}
-            ></div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Dr. Sahid Cholayil</h3>
-            <div className="mb-4">
-              <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
-              <p className="text-on-surface-variant text-xs mb-1">Founder & Chairman – Mission 3G & 3G IRPS (IIT Madras Research Park)</p>
-              <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Humanitarian | Egalitarian | AI Scientist | Futurist | Educationist | Serial Entrepreneur</p>
+        <div className="max-w-container-max mx-auto md:px-margin-desktop">
+          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-gutter overflow-x-auto md:overflow-x-visible snap-x snap-mandatory px-margin-mobile md:px-0 pb-8 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] after:content-[''] after:shrink-0 after:w-1 md:after:hidden">
+            {/* Founder */}
+            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 snap-center w-[85vw] sm:w-[400px] md:w-auto">
+              <div
+                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+                style={{ backgroundImage: 'url("/founder.jpg")' }}
+              ></div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Dr. Sahid Cholayil</h3>
+              <div className="mb-4">
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-on-surface-variant text-xs mb-1">Founder & Chairman – Mission 3G & 3G IRPS (IIT Madras Research Park)</p>
+                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Humanitarian | Egalitarian | AI Scientist | Futurist | Educationist | Serial Entrepreneur</p>
+              </div>
+              <p className="text-on-surface-variant text-sm">A visionary leader dedicated to advancing innovation, research, education, and entrepreneurship while building future-ready communities through technology and sustainable development.</p>
             </div>
-            <p className="text-on-surface-variant text-sm">A visionary leader dedicated to advancing innovation, research, education, and entrepreneurship while building future-ready communities through technology and sustainable development.</p>
-          </div>
-          {/* Co-Founder 1 */}
-          <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
-            <div
-              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
-              style={{ backgroundImage: 'url("/co-founder-1.jpg")' }}
-            ></div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Shibili Rahman K.P.</h3>
-            <div className="mb-4">
-              <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
-              <p className="text-on-surface-variant text-xs mb-1">Chairman – RAC Global</p>
-              <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Startup Mentor | Investor</p>
+            {/* Co-Founder 1 */}
+            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 snap-center w-[85vw] sm:w-[400px] md:w-auto">
+              <div
+                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+                style={{ backgroundImage: 'url("/co-founder-1.jpg")' }}
+              ></div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Shibili Rahman K.P.</h3>
+              <div className="mb-4">
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-on-surface-variant text-xs mb-1">Chairman – RAC Global</p>
+                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Startup Mentor | Investor</p>
+              </div>
+              <p className="text-on-surface-variant text-sm">An entrepreneur and startup mentor committed to nurturing founders, fostering innovation, and enabling scalable businesses through mentorship, strategic guidance, and investment.</p>
             </div>
-            <p className="text-on-surface-variant text-sm">An entrepreneur and startup mentor committed to nurturing founders, fostering innovation, and enabling scalable businesses through mentorship, strategic guidance, and investment.</p>
-          </div>
-          {/* Co-Founder 2 */}
-          <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up">
-            <div
-              className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
-              style={{ backgroundImage: 'url("/co-founder-2.jpg")' }}
-            ></div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Muhammed Nabeel P.A.</h3>
-            <div className="mb-4">
-              <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
-              <p className="text-on-surface-variant text-xs mb-1">Founder – NB Group of Companies<br />CEO – 3G BrandVersity</p>
-              <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Brand Strategist | Business Consultant</p>
+            {/* Co-Founder 2 */}
+            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 snap-center w-[85vw] sm:w-[400px] md:w-auto">
+              <div
+                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale transition-all duration-500 group-hover:grayscale-0"
+                style={{ backgroundImage: 'url("/co-founder-2.jpg")' }}
+              ></div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Muhammed Nabeel P.A.</h3>
+              <div className="mb-4">
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-on-surface-variant text-xs mb-1">Founder – NB Group of Companies<br />CEO – 3G BrandVersity</p>
+                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Brand Strategist | Business Consultant</p>
+              </div>
+              <p className="text-on-surface-variant text-sm">An entrepreneur and brand strategist passionate about empowering businesses through branding, digital innovation, entrepreneurship, and community-driven business growth.</p>
             </div>
-            <p className="text-on-surface-variant text-sm">An entrepreneur and brand strategist passionate about empowering businesses through branding, digital innovation, entrepreneurship, and community-driven business growth.</p>
           </div>
         </div>
       </section>
