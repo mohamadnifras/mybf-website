@@ -7,9 +7,50 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const whoCanJoinRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    let scrollAnimationId: number;
+    let isPaused = false;
+    
+    const startScroll = () => {
+      const scroll = () => {
+        if (window.innerWidth < 768 && !isPaused) {
+          if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1) {
+            carousel.scrollLeft = 0;
+          } else {
+            carousel.scrollLeft += 1;
+          }
+        }
+        scrollAnimationId = requestAnimationFrame(scroll);
+      };
+      scrollAnimationId = requestAnimationFrame(scroll);
+    };
+
+    startScroll();
+
+    const pauseScroll = () => { isPaused = true; };
+    const resumeScroll = () => { isPaused = false; };
+
+    carousel.addEventListener('mouseenter', pauseScroll);
+    carousel.addEventListener('mouseleave', resumeScroll);
+    carousel.addEventListener('touchstart', pauseScroll, { passive: true });
+    carousel.addEventListener('touchend', resumeScroll, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(scrollAnimationId);
+      carousel.removeEventListener('mouseenter', pauseScroll);
+      carousel.removeEventListener('mouseleave', resumeScroll);
+      carousel.removeEventListener('touchstart', pauseScroll);
+      carousel.removeEventListener('touchend', resumeScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const carousel = whoCanJoinRef.current;
     if (!carousel) return;
 
     let scrollAnimationId: number;
@@ -513,36 +554,39 @@ export default function Home() {
           <p className="text-on-surface-variant max-w-2xl mx-auto mb-16 text-lg reveal-on-scroll active fade-in-up">
             MYBF welcomes individuals who are passionate about entrepreneurship and business.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+          <div 
+            ref={whoCanJoinRef}
+            className="flex md:flex-wrap md:justify-center gap-4 max-w-4xl mx-auto overflow-x-auto md:overflow-x-visible px-margin-mobile md:px-0 pb-4 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none"
+          >
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Aspiring Entrepreneurs</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Startup Founders</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Business Owners</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Professionals</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Freelancers</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Students with Business Ideas</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Mentors & Industry Experts</span>
             </div>
-            <div className="glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
+            <div className="shrink-0 glass px-6 py-4 rounded-full flex items-center gap-3 reveal-on-scroll active fade-in-up hover:bg-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 cursor-default shadow-lg shadow-black/5">
               <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
               <span className="text-on-surface font-medium">Investors & Business Leaders</span>
             </div>
