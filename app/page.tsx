@@ -214,7 +214,7 @@ export default function Home() {
               ></div>
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Dr. Sahid Cholayil</h3>
               <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
                 <p className="text-on-surface-variant text-xs mb-1">Founder & Chairman – Mission 3G & 3G IRPS (IIT Madras Research Park)</p>
                 <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Humanitarian | Egalitarian | AI Scientist | Futurist | Educationist | Serial Entrepreneur</p>
               </div>
@@ -228,7 +228,7 @@ export default function Home() {
               ></div>
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Shibili Rahman K.P.</h3>
               <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
                 <p className="text-on-surface-variant text-xs mb-1">Chairman – RAC Global</p>
                 <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Startup Mentor | Investor</p>
               </div>
@@ -242,7 +242,7 @@ export default function Home() {
               ></div>
               <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Muhammed Nabeel P.A.</h3>
               <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Co-Founder – MYBF</p>
+                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
                 <p className="text-on-surface-variant text-xs mb-1">Founder – NB Group of Companies<br />CEO – 3G BrandVersity</p>
                 <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Brand Strategist | Business Consultant</p>
               </div>
