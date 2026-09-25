@@ -6,48 +6,7 @@ import TopNavBar from "@/components/TopNavBar";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const carouselRef = useRef<HTMLDivElement>(null);
   const whoCanJoinRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
-
-    let scrollAnimationId: number;
-    let isPaused = false;
-    
-    const startScroll = () => {
-      const scroll = () => {
-        if (window.innerWidth < 768 && !isPaused) {
-          if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1) {
-            carousel.scrollLeft = 0;
-          } else {
-            carousel.scrollLeft += 1;
-          }
-        }
-        scrollAnimationId = requestAnimationFrame(scroll);
-      };
-      scrollAnimationId = requestAnimationFrame(scroll);
-    };
-
-    startScroll();
-
-    const pauseScroll = () => { isPaused = true; };
-    const resumeScroll = () => { isPaused = false; };
-
-    carousel.addEventListener('mouseenter', pauseScroll);
-    carousel.addEventListener('mouseleave', resumeScroll);
-    carousel.addEventListener('touchstart', pauseScroll, { passive: true });
-    carousel.addEventListener('touchend', resumeScroll, { passive: true });
-
-    return () => {
-      cancelAnimationFrame(scrollAnimationId);
-      carousel.removeEventListener('mouseenter', pauseScroll);
-      carousel.removeEventListener('mouseleave', resumeScroll);
-      carousel.removeEventListener('touchstart', pauseScroll);
-      carousel.removeEventListener('touchend', resumeScroll);
-    };
-  }, []);
 
   useEffect(() => {
     const carousel = whoCanJoinRef.current;
@@ -195,62 +154,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Visionaries */}
-      <section className="py-24 bg-surface-container-lowest/50" id="visionaries">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-16">
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">The Vision Behind MYBF</h2>
-          <p className="text-on-surface-variant max-w-xl mx-auto">The driving force behind MYBF&apos;s mission to reshape the future.</p>
-        </div>
-        <div className="max-w-container-max mx-auto md:px-margin-desktop">
-          <div 
-            ref={carouselRef}
-            className="flex md:grid md:grid-cols-3 gap-6 md:gap-gutter overflow-x-auto md:overflow-x-visible px-margin-mobile md:px-0 pb-8 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none"
-          >
-            {/* Founder */}
-            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 w-[85vw] sm:w-100 md:w-auto">
-              <div
-                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale-0 md:grayscale transition-all duration-500 group-hover:grayscale-0"
-                style={{ backgroundImage: 'url("/founder.jpg")' }}
-              ></div>
-              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Dr. Sahid Cholayil</h3>
-              <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
-                <p className="text-on-surface-variant text-xs mb-1">Founder & Chairman – Mission 3G & 3G IRPS (IIT Madras Research Park)</p>
-                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Humanitarian | Egalitarian | AI Scientist | Futurist | Educationist | Serial Entrepreneur</p>
-              </div>
-              <p className="text-on-surface-variant text-sm">A visionary leader dedicated to advancing innovation, research, education, and entrepreneurship while building future-ready communities through technology and sustainable development.</p>
-            </div>
-            {/* Co-Founder 1 */}
-            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 w-[85vw] sm:w-100 md:w-auto">
-              <div
-                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale-0 md:grayscale transition-all duration-500 group-hover:grayscale-0"
-                style={{ backgroundImage: 'url("/co-founder-1.jpg")' }}
-              ></div>
-              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Shibili Rahman K.P.</h3>
-              <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
-                <p className="text-on-surface-variant text-xs mb-1">Chairman – RAC Global</p>
-                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Startup Mentor | Investor</p>
-              </div>
-              <p className="text-on-surface-variant text-sm">An entrepreneur and startup mentor committed to nurturing founders, fostering innovation, and enabling scalable businesses through mentorship, strategic guidance, and investment.</p>
-            </div>
-            {/* Co-Founder 2 */}
-            <div className="group glass glass-glow p-8 rounded-3xl transition-all duration-500 reveal-on-scroll active fade-in-up shrink-0 w-[85vw] sm:w-100 md:w-auto">
-              <div
-                className="w-full aspect-4/5 rounded-2xl mb-6 bg-cover bg-center bg-surface-container-high grayscale-0 md:grayscale transition-all duration-500 group-hover:grayscale-0"
-                style={{ backgroundImage: 'url("/co-founder-2.jpg")' }}
-              ></div>
-              <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">Muhammed Nabeel P.A.</h3>
-              <div className="mb-4">
-                <p className="text-primary font-label-caps text-label-caps uppercase mb-1">Members – MYBF</p>
-                <p className="text-on-surface-variant text-xs mb-1">Founder – NB Group of Companies<br />CEO – 3G BrandVersity</p>
-                <p className="text-on-surface-variant text-[10px] uppercase tracking-wider opacity-80">Entrepreneur | Brand Strategist | Business Consultant</p>
-              </div>
-              <p className="text-on-surface-variant text-sm">An entrepreneur and brand strategist passionate about empowering businesses through branding, digital innovation, entrepreneurship, and community-driven business growth.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Vision & Mission */}
       <section className="py-24 md:py-40" id="vision">
